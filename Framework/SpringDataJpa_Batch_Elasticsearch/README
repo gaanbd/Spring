@@ -1,0 +1,5 @@
+Before start-up
+===============
+It should have Customer table in mysql if not application can't start-up resulting with [Table 'test.customer' doesn't exist].
+If another table data to be transfered need to change the domain wherever it has been mentioned.
+RowMapper in batch should have field name mentioned in customer table else throws Unknown column 'lastName' in 'field list'

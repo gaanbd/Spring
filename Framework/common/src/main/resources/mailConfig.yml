@@ -1,0 +1,70 @@
+ mail:
+       host: smtp.gmail.com
+       port: 465
+       username:  
+       password:    
+       protocol: smtp
+       tls: true
+       properties.mail.smtp:
+            auth: true
+            starttls.enable: true
+            ssl.trust: smtp.gmail.com
+            ssl.enable: true
+            socketFactory.port: 465
+            socketFactory.class: javax.net.ssl.SSLSocketFactory
+            socketFactory.fallback: false
+     #mail:
+       #host: smtp.zoho.com
+       #port: 587
+       #username: ****
+       #password: ****        
+       #protocol: smtp
+       #tls: true
+       #properties.mail.smtp:
+            #auth: true
+            #starttls.enable: true
+            #ssl.trust: smtp.zoho.com
+            #ssl.enable: true
+            #socketFactory.port: 587
+            #socketFactory.class: javax.net.ssl.SSLSocketFactory
+            #socketFactory.fallback: false        
+    #mail:
+        #host: smtp-mail.outlook.com
+        #port: 587
+        #username:  *****
+        #password:  *****         
+        #protocol: smtp
+        #tls: true
+        #properties.mail.smtp:
+            #auth: true
+            #starttls.enable: true
+            #ssl.trust: smtp-mail.outlook.com
+            #ssl.enable: true         
+     #mail:
+        #host: smtp.mail.yahoo.com
+        #port: 465
+        #username: ***** 
+        #password: *****          
+        #protocol: smtp
+        #tls: true
+        #properties.mail.smtp: 
+            #auth: true
+            #starttls.enable: true
+            #ssl.trust: smtp.mail.yahoo.com
+            #ssl.enable: true
+            #socketFactory.port: 465
+            #socketFactory.class: javax.net.ssl.SSLSocketFactory
+            #socketFactory.fallback: false     
+      #mail:
+        #host: email-smtp.us-east-1.amazonaws.com
+        #port: 587
+        #username: ******
+        #password: ******
+        #protocol: smtps
+        #debug: true
+        #properties.mail.smtp:
+            #starttls.enable: true
+            #starttls.required: true
+            #ssl.enable: true
+        #properties.mail.smtps:
+            #auth: true

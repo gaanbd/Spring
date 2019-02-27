@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+app:
+   topic:
+      topic: event
+      
+server: 
+   port: 8083

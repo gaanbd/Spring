@@ -1,0 +1,13 @@
+AUTO SCHEMA CREATION H2 DB:
+==========================
+
+ Following changes in application.properties file
+1.Pointed to already created schema and viewed in host:port/h2 url. Else throws Schema not exists
+	spring.datasource.url=jdbc:h2:file:~/test 
+
+2.Create schema on start-up in memory(cleared once server stopped/started), can't viewed in host:port/h2 url.
+	spring.datasource.url=jdbc:h2:mem:testing;INIT=CREATE SCHEMA IF NOT EXISTS TESTING\\;SET SCHEMA TESTING;
+
+3.Create schema on start-up, can view in host:port/h2 url	 
+	spring.datasource.url=jdbc:h2:file:~/testing;INIT=CREATE SCHEMA IF NOT EXISTS TESTING\\;SET SCHEMA TESTING;
+

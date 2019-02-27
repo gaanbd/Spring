@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: ZuulGateway
+
+server:
+  port: 8086
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    prefer-ip-address: false   
+    
+      
+zuul:
+  routes:
+    mail:
+      
+      service-id: MailService
+  host:
+    socket-timeout-millis: 30000
+
+MailService:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: http://localhost:8082
+    ConnectTimeout: 1000
+    ReadTimeout: 3000
+    MaxTotalHttpConnections: 500
+    MaxConnectionsPerHost: 100               
+        

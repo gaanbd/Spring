@@ -1,0 +1,23 @@
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        serviceUrl:
+          defaultZone: http://127.0.0.1:8761/eureka/  
+          
+server:
+  port: 8082
+  
+#Redis Config
+
+spring:
+  cache:
+    type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    
+    
+
+
+            

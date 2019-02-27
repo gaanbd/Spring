@@ -1,0 +1,30 @@
+spring: 
+  datasource: 
+     url: jdbc:mysql://localhost:3306/oauth
+     username: root
+     password: root
+     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+     hibernate:
+        ddl-auto: update
+     show-sql: false
+     
+security: 
+   oauth2:
+     resource:
+       filter-order: 3
+     
+client: 
+    id: techmango-client 
+    secret: techmango
+    
+server:
+  port: 8085
+  
+default:
+    mail:
+       to: sofia@techmango.net
+       flag: yes
+
+otp:
+  length: 6
